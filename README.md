@@ -90,20 +90,15 @@ python3 main.py
 }
 ```
 
-🧠 Built With
-Guardrails AI – LLM output validation
 
-Pydantic – Structured schema enforcement
+## 📌 Features
 
-OpenAI GPT – LLM backend
-
-📌 Features
 🔐 Safety Layer: PII, toxicity, brand protection
 
 🧭 Schema-Aware Validation: Detects malformed JSON or missing fields
 
 ⚙️ Modular Design: Add validators or schemas easily
 
-🌐 Realistic Outputs: Designed for apps like travel assistants, chatbots, dashboards
+🌐 Realistic Outputs: Designed for apps like AI assistants, chatbots, dashboards
 
 
