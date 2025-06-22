@@ -190,15 +190,15 @@ python3 main.py
 ## 🔧 1. Prompt-based Guardrails (Soft Guardrails)
 This is the most common and lightweight approach:
 
-Constraints, instructions, or rules are embedded directly in the prompt.
+- Constraints, instructions, or rules are embedded directly in the prompt.
 
-Example:
+- Example:
 
 ```bash
 You are an assistant that never gives medical advice. If asked, reply: "I'm not a medical professional..."
 This relies on the LLM "understanding" and obeying the instruction.
 ```
-Limitation: The LLM may ignore or misinterpret these rules, especially under adversarial prompting.
+- Limitation: The LLM may ignore or misinterpret these rules, especially under adversarial prompting.
 
 ## 🧱 2. Programmatic / Code-based Guardrails (Hard Guardrails)
 These are implemented outside the model, using software frameworks like Microsoft's Guidance, Guardrails AI, Rebuff, or custom wrappers:
@@ -209,17 +209,17 @@ You define a schema, then validate LLM outputs against that schema (e.g., using 
 
 If output doesn't conform, the framework can:
 
-Reject the response,
+- Reject the response,
 
-Ask the LLM to retry,
+- Ask the LLM to retry,
 
-Or post-process/repair the response.
+- Or post-process/repair the response.
 
 ## ⚡ 3. Function Calling / Tool Use Constraints
 In tools like OpenAI's function calling, you can constrain the LLM to:
 
-Only respond with structured output (e.g., JSON)
+- Only respond with structured output (e.g., JSON)
 
-Only trigger certain functions/tools you've explicitly exposed
+- Only trigger certain functions/tools you've explicitly exposed
 
-This constrains behavior by removing "free-form" output when not desired
+- This constrains behavior by removing "free-form" output when not desired
